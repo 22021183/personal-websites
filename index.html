@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f7f9fc;
+        color: #333;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px 0;
+    }
+    
+    header {
+        background: #004080;
+        color: white;
+        padding: 40px 0;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid white;
+        object-fit: cover;
+    }
+    
+    .nav {
+        background: #022b50;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .nav ul {
+        list-style: none;
+    }
+    
+    .nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    .nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .section {
+        background: white;
+        margin: 20px 0;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tags {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .tags li {
+        background: #004080;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+    
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    .slides {
+        display: flex;
+        width: 300%;
+        animation: slide 30s infinite;
+        -webkit-animation: slide 30s infinite;
+    }
+    
+    .slides img {
+        width: 100%;
+        height: auto;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0%);
+        }
+        33% {
+            transform: translateX(-100%);
+        }
+        66% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    
+    .education-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .education-list li {
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <mudaumurendiwa class="com"></mudaumurendiwa>
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+            <img src="picweb.jpg" alt="Your Photo" class="profile-pic" />
+            <div>
+                <h1>Mudau Murendiwa</h1>
+                <p>Web Developer | Student | Cybersecurity</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a passionate cybersecurity enthusiast and web developer with a strong focus on front-end technologies. I thrive on learning new skills, building innovative projects, and solving complex problems through code</p>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>java</li>
+                <li>Python</li>
+                <li>Cybersecurity</li>
+                <li>Networking</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul class="tags">
+                <li>English</li>
+                <li>Tshivenda</li>
+                <li>Xitsonga</li>
+                <li>Sepedi</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="simple.jpeg" alt="Certificate 1" />
+                    <img src="hp.jpeg" alt="Certificate 2" />
+                    <img src="int.jpeg" alt="Certificate 3" />
+                    <img src="netbas.jpeg" alt="Certificate 4" />
+                    <img src="neti.jpeg" alt="Certificate 5" />
+                    <img src="endp.png" alt="Certificate 6" />
+                    <img src="netadress.png" alt="Certificate 7" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>
+                    <strong>Bachelor of Science in Computer Science</strong><br/> University of Venda, 2022 - 2025
+                </li>
+                <li>
+                    <strong>Mathematics and Science</strong><br/> Azwifarwi Sec School, 2017 - 2021
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: mudaumurendiwa8@gmail.com</p>
+            <p>Phone number:0713888167</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">https://www.linkedin.com/in/mure
+                ndiwa-mudau-9508342a5?
+                 utm_source=share&utm_campaign
+                =share_via&utm_content=profile& utm_medium=ios_app</a></p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 mudaumurendiwa. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
